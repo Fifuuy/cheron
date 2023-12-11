@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="wyslij.php" method="post" onsubmit="return 
+    wyslij()">
+        imie: <input type="text" name="" id="imie">
+        nazwisko: <input type="text" name="" id="nazwisko">
+        <input type="submit" value="wyslij">
+    </form>
+    <script>
+        function wyslij(){
+            var regexImie = /^{a-z}{3,}$/;
+            var regexNazwisko = /^{a-z}{3,}$/;
+            var imie = document.getElementById("imie");
+            var nazwisko = document.getElementById("nazwisko");
+
+            if(regexImie.test(imie)&&regexNazwisko,test(nazwisko))
+            {
+                return True;
+            }
+            else{
+                alert("Imie i nazwisko powinny zawierac co najmniej 3 znaki");
+                return False;
+            }
+        }
+    </script>
+</body>
+</html>

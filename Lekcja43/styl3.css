@@ -1,0 +1,51 @@
+body{
+    font-family: Georgia;
+    color: AliceBlue;
+}
+#baner{
+    background-color: #A00037;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    padding: 3px;
+}
+#artykuly{
+    width: 70%;
+    float:left;
+}
+button{
+    background-color: #D81B60;
+    color: white;
+    padding:15px;
+    margin: 20px;
+    width: 100%;
+}
+#artyk1, #artyk2, #artyk3, #artyk4{
+    display: none;
+    color: black;
+    
+}   
+#stopka{
+    background-color: #D81B60;
+    color: white;
+    width: 20%;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 10px 10px 12px DimGrey;
+    float: right;
+}
+h5, blockquote{
+    font-style: italic;
+    margin: 0px;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+table{
+    margin: auto;
+    width: 96%;
+    border: 1px solid AliceBlue;
+}
+

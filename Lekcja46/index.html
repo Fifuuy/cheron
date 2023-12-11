@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+ 
+        L1: <input type="number" name="" id="l1"> <br />
+        L2 <select name="" id="l2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br />
+        L3:  <br>
+        1<input type="radio" name="L3" id="l31"> <br>
+        2   <input type="radio" name="L3" id="l32"> <br>
+        3  <input type="radio" name="L3" id="l33"> <br>
+        L4 <input type="checkbox" name="" id="L41">5 <br>
+        L5  <input type="checkbox" name="" id="L42">10 <br>
+        L6  <input type="checkbox" name="" id="L43">15 <br>
+        <input type="button" value="oblicz" onclick="licz()"> <br>/
+    <p id="wynik">
+    </p>
+    <script>
+        function licz(){
+            var l1 = document.getElementById("l1").value*1;
+            var l2 = document.getElementById("l31").value*1;
+            var l31 = document.getElementsByName("l3").value*1;
+            var l32 = document.getElementsByName("l32").value*1;
+            var l33 = document.getElementsByName("l33").value*1;
+            var l41 = document.getElementById("l41").value*1;
+            var l42 = document.getElementById("l42").value*1;
+            var l43 = document.getElementById("l43").value*1;
+            
+            if(!$isNan(l1)){
+                var pomocnicza = 0;
+                if(document.getElementById("l31").checked){
+                    pomocnicza = l31;
+                }
+                if(document.getElementById("l32").checked){
+                    pomocnicza = l32;
+                }
+                if(document.getElementById("l33").checked){
+                    pomocnicza = l33;
+                }
+                var check = 6;
+                if(document.getElementById("l41").checked){
+                    check = l41;
+                }
+                if(document.getElementById("l42").checked){
+                    check = l42;
+                }
+                if(document.getElementById("l43").checked){
+                    check = l43;
+                }
+            }
+            var  wynik = l1+l2+pomocnicza+check;
+            document.getElementById("suma").innerHTML="wynik: +wynik";
+
+            
+        }
+    </script>
+</body>
+</html>

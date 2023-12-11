@@ -1,0 +1,49 @@
+body{
+    font-family: Tahoma;
+
+}
+#logo{
+    background-color: #28C7A8;
+    text-align: center;
+    height: 100px;
+    width: 30%;
+    float: left;
+}
+#menu{
+    background-color:  #78E3CE;
+    height: 100px;
+    width: 70%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+#lewy{
+    background-color: #78E3CE;
+    height: 850px;
+    width: 30%;
+    float: left;
+}
+#prawy{
+    background-color:  #28C7A8;
+    height: 850px;
+    width: 70%;
+    float: left;
+}
+#stopka{
+    background-color: black;
+    color: white;
+    text-align: right;
+    clear: both;
+}
+#menu a{
+    background-color: green;
+    color: orange;
+    padding: 10px 40px 10px 40px;
+    margin-right: 5px;
+    
+
+}
+#menu a:hover{
+    background-color: orange;
+    color: green;
+}

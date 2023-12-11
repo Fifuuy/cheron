@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funkcja()">Zmien</button>
+    <img src="obraz.png" alt="" class="klasa">
+    <div class="klasa">
+        DIVOLO                 
+    </div>
+    <script>
+        function funkcja(){
+            const obrazidiv = document.querySelectorAll(".klasa");
+            
+            obrazidiv[0].style = 'border: 1px dashed green;';
+            obrazidiv[1].style = 'font-size: 24px;';
+
+            obrazidiv[0].style = 'width: 50
+            obrazidiv[1].style = 'width: 50%;';
+
+            obrazidiv[0].style = 'height: 150%;';
+            obrazidiv[1].style = 'height 100px;';
+
+            obrazidiv[0].style = 'box-shadow: 10px green;';
+            obrazidiv[1].style = 'box-shadow: 20px 20px blue;';
+
+            obrazidiv[0].style = 'border-radius: 25px;';
+            obrazidiv[1].style = 'text-align: center;';
+
+            obrazidiv[0].style = 'opacity: 5px;';
+            obrazidiv[1].style = 'font-family: Arial;';
+
+            obrazidiv[0].style = 'margin: 30px;';
+            obrazidiv[1].style = 'background-color: black;';
+        }
+    </script>
+</body>
+</html>
